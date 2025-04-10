@@ -13,7 +13,7 @@ function App() {
     formData.append("fileName", file);
 
     try {
-      const response = await fetch("http://localhost:3000/upload", {
+      const response = await fetch("https://pwa-be-five.vercel.app/upload", {
         method: "POST",
         body: formData,
       });
